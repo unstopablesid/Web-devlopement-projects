@@ -1,0 +1,33 @@
+#load{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid rgb(0, 208, 255);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: 2s  spin linear infinite; ;
+    }
+    @keyframes spin {
+    0% {
+    /* Set rotation to 0 degrees */
+    rotate: 0deg;
+    }
+    100% {
+    /* Set rotation to 360 degrees */
+    rotate: 360deg;
+    }
+    }
