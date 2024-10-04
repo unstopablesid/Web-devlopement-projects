@@ -1,0 +1,22 @@
+In JavaScript, you can declare variables using `var`, `let`, or `const`. Here's how you use each of them:
+
+1. **Using `var`** (older syntax, function-scoped):
+   ```javascript
+   var name = "John";
+   var age = 30;
+   ```
+
+2. **Using `let`** (block-scoped, preferred for mutable variables):
+   ```javascript
+   let city = "New York";
+   let score = 100;
+   ```
+
+3. **Using `const`** (block-scoped, for constants that shouldn't change):
+   ```javascript
+   const country = "India";
+   const PI = 3.14159;
+   ```
+
+- Use `var` sparingly as `let` and `const` offer better scoping and reduce potential bugs.
+- `const` is used when you don't want the variable value to change.
