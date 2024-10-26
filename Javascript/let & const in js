@@ -1,0 +1,11 @@
+let in js
+it is the syntax of declaring variable
+
+let age =23;
+let cgpa = 9.1;
+
+const in js
+it is used to declare the constant variable in the javascrpit const cant be changed with re assignment & they cant be redeclare
+
+const year = 23;
+const pi = 3.14;
