@@ -1,0 +1,5 @@
+This is the genreral order of saving an expression 
+1) () = open brackets
+2) ** = Square root
+3) * , / , % = multiply , division , modulo
+4) + , - = addition , subraction 
