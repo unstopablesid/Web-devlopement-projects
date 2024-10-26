@@ -1,0 +1,14 @@
+ There are two types of operators in java assignment operators and unary operators
+1) Assignment operators
++=
+-=
+*=
+2) Unary operators
+increment = ++
+decrement = --
+
+post increment a++
+post decrement a--
+
+pre increment ++a
+pre decrement --a
