@@ -1,0 +1,1 @@
+let firstName = prompt("Enter your first name: ");
