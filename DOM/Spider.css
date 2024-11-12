@@ -1,3 +1,4 @@
+/* 
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -13,7 +14,7 @@ div {
   padding: 20px;
   max-width: 600px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* display: flex; */
+  display: flex;
 }
 
 h1 {
@@ -37,4 +38,18 @@ p {
 
 strong {
   color: #000;
+} */
+
+.red{
+  color: red;
+}
+.blue{
+  color: blue;
+}
+
+.box{
+
+  background-color: #8efff6;
+  border: 1px solid #000000;
+  border-radius: 8px;
 }
