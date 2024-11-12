@@ -1,0 +1,18 @@
+body{
+    /* background-color: lightblue; */
+    text-align: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+#btn{
+    height: 50px;
+    width: 150px;
+}
+#container{
+    border: 2px solid black;
+    height: 10em;
+    width: 25em;
+    margin:1em auto;
+    justify-content: center;
+}
