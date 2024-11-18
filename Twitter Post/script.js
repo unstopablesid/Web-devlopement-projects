@@ -6,5 +6,4 @@ const post ={
 
 };
 console.log(post);
-
 post.content = "day two on NNN";
