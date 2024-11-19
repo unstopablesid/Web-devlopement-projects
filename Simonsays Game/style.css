@@ -11,7 +11,7 @@ margin: 0.5rem;
 .btnContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 80vh;
 }
 
@@ -19,11 +19,17 @@ margin: 0.5rem;
     background-color: blue;
 }
 .green{
-    background-color: green;
+    background-color: rgb(61, 221, 168);
 }
 .red{
     background-color: red;
 }
 .yellow{
     background-color: yellow;
+}
+.flash{
+    background-color: white;
+}
+.user{
+    background-color: rgb(53, 177, 0);
 }
