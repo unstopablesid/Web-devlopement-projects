@@ -18,3 +18,10 @@ while(req !== "quit"){
     }
     req =  prompt("Enter the request:");
 }
+
+
+async function hello(){
+    return "Hello";
+    
+}
+let a = hello();
