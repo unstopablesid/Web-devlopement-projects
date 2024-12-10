@@ -20,3 +20,22 @@ async function getFact() {
     }
     
 }
+
+let url2 = "https://dog.ceo/api/breeds/image/random";
+let btn2 = document.querySelector("button");
+btn2.addEventListener("click", async () => {
+    console.log("btn clicked");
+    let res = document.querySelector("#img");
+    res.setAttribute("src",link);
+}) 
+async function getImg() {
+    try{
+        let res = await axios.get(url2);
+        return res.data.message;
+    }
+    catch(e){
+        console.log("Error fetching fact: ", e);
+        return "no fact was found";
+    }
+    
+}
