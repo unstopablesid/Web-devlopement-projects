@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #f00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 0.25rem;
+    transform: translate(-50%, -50%);
+    animation: move 10s infinite;
+}
+/* @keyframes move{
+from{
+    left: 0;
+    top: 0;
+}
+to{
+    right: 100%;
+    bottom: 100%;
+    rotate: 360deg;
+} } */
