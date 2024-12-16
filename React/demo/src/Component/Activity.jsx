@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Activity = () => {
-    let style = { backgroundColor: 'red' , color: 'white' , padding: '10px' };
+    // let style = {color: 'white'};
 return (
    <> <div>
-    <div style={style}>
+    <div style={{color: 'white'}}>
         <h1>Hello</h1>
     </div>
 </div>
