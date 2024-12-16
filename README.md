@@ -5,7 +5,6 @@
 Welcome to the **Web Development** repository! This repo showcases projects and code related to web development, including frontend and backend work using technologies like HTML, CSS, JavaScript, and the MEARN stack (MongoDB, Express.js, Angular/React, Node.js).
 
 ## Table of Contents
-
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Projects](#projects)
