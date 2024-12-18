@@ -1,13 +1,13 @@
 
 
 import './App.css'
-import Like from './Components/Like'
+import Todo from './Components/Todo'
 
 function App() {
 
   return (
     <>
-      <Like />
+      <Todo />
     </>
   )
 }
