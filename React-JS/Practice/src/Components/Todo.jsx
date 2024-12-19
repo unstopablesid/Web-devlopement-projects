@@ -1,18 +1,28 @@
 import React, { useState } from 'react';
 
 const Todo = () => {
-    let [todos, setTodos] = useState(['']);
+    let [todos, setTodos] = useState([]);
     let [task, setTask] = useState('');
 
     function addTask() {
         if (task.trim() !== '') {
-            setTodos([...todos, task]);
+            setTodos([...todos, { text: task, done: false }]);
             setTask('');
         }
     }
 
     function handleChange(event) {
         setTask(event.target.value);
+    }
+
+    function markDone(index) {
+        const newTodos = todos.map((todo, i) => {
+            if (i === index) {
+                return { ...todo, done: !todo.done };
+            }
+            return todo;
+        });
+        setTodos(newTodos);
     }
 
     return (
@@ -28,7 +38,14 @@ const Todo = () => {
             <ul style={{color:"White", listStyleType:"none"}}>
                 {
                     todos.map((todo, index) => {
-                        return <li key={index}>{todo}</li>
+                        return (
+                            <li key={index} style={{ textDecoration: todo.done ? 'line-through' : 'none' }}>
+                                {todo.text}
+                                <button onClick={() => markDone(index)}>
+                                    {todo.done ? 'Undo' : 'Done'}
+                                </button>
+                            </li>
+                        );
                     })
                 }
             </ul>
