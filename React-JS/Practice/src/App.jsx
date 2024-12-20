@@ -1,13 +1,13 @@
 
 
 import './App.css'
-import Todo from './Components/Todo'
+import Lottery from './Components/Lottery'
 
 function App() {
 
   return (
     <>
-      <Todo />
+      <Lottery/>
     </>
   )
 }

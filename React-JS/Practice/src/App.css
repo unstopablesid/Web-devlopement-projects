@@ -42,3 +42,13 @@ button{
 .read-the-docs {
   color: #888;
 }
+.Ticket{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 3px solid #000000;
+  border-radius: 25%;
+  font-size: 3em;
+}
