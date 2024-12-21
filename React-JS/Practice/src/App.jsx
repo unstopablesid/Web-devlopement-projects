@@ -1,13 +1,18 @@
 
 
 import './App.css'
-import Lottery from './Components/Lottery'
+import Count from './Components/Deep'
 
 function App() {
 
   return (
     <>
-      <Lottery/>
+      <div className="App">
+        <header className="App-header">
+          <h1>React Practice</h1>
+        </header>
+        <Count />
+      </div>
     </>
   )
 }
