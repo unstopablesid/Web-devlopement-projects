@@ -1,10 +1,10 @@
-import React from 'react'
+
 import {getTicket , sum} from './helper';
 import { useState } from 'react';
 
 const Lottery = () => {
     let [ticket , setTicket] = useState(getTicket(3));
-    let isWinning = sum(ticket) === 15;
+    let isWinning = sum(ticket) === 21;
     let BuyTicket = () => {
         setTicket(getTicket(3));
     }

@@ -1,12 +1,13 @@
 
 
 import './App.css'
-import Count from './Components/Deep'
+import Lottery from './Components/Lottery'
 
 function App() {
 
   return (
     <>
+    <Lottery/>
     </>
   )
 }
