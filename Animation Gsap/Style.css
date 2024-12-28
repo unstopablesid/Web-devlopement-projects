@@ -1,13 +1,13 @@
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
     font: 1em sans-serif;
 }
 body{
     height: 100%;
     width: 100%;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 .box{
@@ -31,3 +31,8 @@ to{
     bottom: 100%;
     rotate: 360deg;
 } } */
+  h1::after{
+    content: ' Like and Subscribe';
+
+    color: blue;
+  }
