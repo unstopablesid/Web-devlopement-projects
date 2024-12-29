@@ -24,19 +24,31 @@ gsap.to(
     "#page1 #Box1",{
         duration : 5,
         rotate : 360,
-        borderRadius : "100%",
-        ease : "elastic",
+        borderRadius : "50%",
+        scrollTrigger : {
+            trigger : "#page1",
+            start : "top center",
+            end : "bottom center",
+            scrub : true,
+            markers : true,
+        },
     }
     )
     gsap.to(
         "#page2 #Box2",{
-            duration : 5,
-            rotate : 360,
-            borderRadius : "50%",
-            ease : "elastic",
-        }
+        scrollTrigger : {
+            trigger : "#page2",
+            start : "top center",
+            end : "bottom center",
+            scrub : true,
+            markers : true,
+        },
+        duration : 5,
+        rotate : 360,
+        borderRadius : "50%",
+    }
         )
-        gsap.to(
+gsap.to(
             "#page3 #Box3",{
                 duration : 5,
                 rotate : 360,
