@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "react": "^19.0.0"
+    "figlet": "^1.8.0"
   }
 }

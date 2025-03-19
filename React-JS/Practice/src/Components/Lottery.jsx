@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const Lottery = () => {
     let [ticket , setTicket] = useState(getTicket(3));
-    let isWinning = sum(ticket) === 21;
+    let isWinning ="777";
     let BuyTicket = () => {
         setTicket(getTicket(3));
     }
@@ -18,6 +18,7 @@ const Lottery = () => {
         </div>
         <button onClick = {BuyTicket}>Play</button>
         <h3>{isWinning && "You Win"}</h3>
+        <h3>{}</h3>
 
         
     </div>
