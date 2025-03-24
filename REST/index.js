@@ -42,3 +42,12 @@ app.get('/',(req , res) => {
 app.get('/posts',(req , res) => {
     res.render('index.ejs',{posts:posts});
 }); 
+app.get('/posts/new',(req,res)=>{
+res.render('new.ejs');
+});
+
+app.post('/posts',(req,res)=>{
+    let {username,content} = req.body;
+    posts.push({username,content});
+    res.redirect('/posts');
+});
