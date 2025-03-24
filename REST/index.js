@@ -61,7 +61,18 @@ app.post('/posts',(req,res)=>{
 });
 
 app.get('/posts/:id',(req,res)=>{
-    let {id} = req.params.id;
-    let post = posts.find((p) => p.username === id);
-    res.render('show.ejs',{post:posts[id]});
+    let {id} = req.params;
+    console.log(id);
+    let post = posts.find((p) => id === p.id);
+    res.render('show.ejs',{post});
+});
+
+
+app.patch('/posts/:id',(req,res)=>{
+    let {id} = req.params;
+    let newContent = req.body.content;
+    let post = posts.find((p) => id === p.id);
+    post.content = newContent;
+    console.log(post);
+    res.send('PATCH request received');
 });
