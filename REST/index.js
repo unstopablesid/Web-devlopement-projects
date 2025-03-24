@@ -76,3 +76,15 @@ app.patch('/posts/:id',(req,res)=>{
     console.log(post);
     res.send('PATCH request received');
 });
+
+app.delete('/posts/:id',(req,res)=>{
+    let {id} = req.params;
+    posts = posts.filter((p) => p.id !== id);
+    res.redirect('/posts');
+});
+
+app.get('/posts/:id/edit',(req,res)=>{
+    let {id} = req.params;
+    let post = posts.find((p) => id === p.id);
+    res.render('edit.ejs',{post});
+});
