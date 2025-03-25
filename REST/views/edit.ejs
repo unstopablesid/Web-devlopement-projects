@@ -9,8 +9,8 @@
     <h1>Edit Post</h1>
     <p>Post id: <%= post.id %></p>
     <p>Post Username: <%= post.username %></p>
-    <form action="">
-        <textarea name="" id=""><%= post.content%></textarea>
+    <form action="/posts/<%= post.id %>?_method=PATCH" method="POST">
+        <textarea name="content" id="" rows="10" cols="35"><%= post.content%></textarea>
         <button type="submit">Submit</button>
     </form>
 </body>
