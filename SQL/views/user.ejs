@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .Heading {
+            display: flex   ;
+            background-color: #f2f2f2;
+            padding: 8px;
+            text-align: center;
+            justify-content: center; 
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="Heading"><h2 >All users</h2></div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th></th>
+        </tr>
+    <% for (user of users) { %>
+        <tr>
+            <td><%= user.id %></td>
+            <td><%= user.username %></td>
+            <td><%= user.email %></td>
+            <td><%= user.password %></td>
+            <td>
+            <form method="GET" action="/user/<%= user.id %>/edit/">
+                <button>Edit</button>
+            </form></td>
+        </tr>
+        <% } %>
+       
+    </table>
+</body>
+</html>
