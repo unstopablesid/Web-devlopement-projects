@@ -39,12 +39,12 @@ const User = mongoose.model('User', userSchema);
 // .catch(err => console.log(err));
 
 
-User.insertMany([
-    {name:"Mayur Patil",
-    age: 22,},
-    {name:"Sidharth Patil", age: 21,},
-    {name:"Dr Hiesenberg", age: 20,}, 
-    {name:"homelander", age: 20,},
-]).then((data)=>{
-    console.log(data);
-});
+// User.insertMany([
+//     {name:"Mayur Patil",
+//     age: 22,},
+//     {name:"Sidharth Patil", age: 21,},
+//     {name:"Dr Hiesenberg", age: 20,}, 
+//     {name:"homelander", age: 20,},
+// ]).then((data)=>{
+//     console.log(data);
+// });
