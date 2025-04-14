@@ -1,0 +1,25 @@
+git commit -m "Remove secret from package.json"{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "codes",
+  "version": "1.0.0",
+  "description": "Welcome to the **Web Development** repository! This repo showcases projects and code related to web development, including frontend and backend work using technologies like HTML, CSS, JavaScript, and the MEARN stack (MongoDB, Express.js, Angular/React, Node.js).",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/unstopablesid/Web-devlopement-projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/unstopablesid/Web-devlopement-projects/issues"
+  },
+  "homepage": "https://github.com/unstopablesid/Web-devlopement-projects#readme"
+}
