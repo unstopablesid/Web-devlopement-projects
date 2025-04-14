@@ -16,24 +16,11 @@ main().then(() => {
 
 async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/Whatsapp');
-    console.log('Connected to MongoDB');
   }
 
-app.get("/Chat", async (req, res) => {
+app.get("/chats", async (req, res) => {
     let Chat = await chat.find();
-    console.log(Chat);
    res.render("index.ejs", { Chat });
-});
-//mongodb chat creation
-let chat1 = new chat({
-    from: 'mayur',
-    to : 'sachin',
-    created_at: new Date(),
-    msg: 'hello sachin'
-});
-
-chat1.save().then(() => {
-    console.log('Chat saved successfully!' , chat1);
 });
 
 

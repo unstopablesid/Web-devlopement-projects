@@ -7,11 +7,20 @@
 </head>
 <body>
     <h3>All Chats</h3>
-
-    for(let chat of chats){
+<form action="">
+    <button>New Chat</button>
+</form>
+   <% for(let chat of chats) { %>
         <div class="chat">
-           <p> From <%= chat.from</p>
+           <p> From : <i> <%= chat.from %></i></p>
+        
+        <div class="msg">
+            <p> Message : <i> <%= chat.msg %></i></p>
         </div>
-    }
+        <p> Recieved By <i> <%= chat.to %></i></p>
+        <hr>
+    </div>
+    <br /><br />
+  <% } %>
 </body>
 </html>
