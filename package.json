@@ -1,4 +1,4 @@
-git commit -m "Remove secret from package.json"{
+{
   "dependencies": {
     "express": "^5.1.0"
   },
